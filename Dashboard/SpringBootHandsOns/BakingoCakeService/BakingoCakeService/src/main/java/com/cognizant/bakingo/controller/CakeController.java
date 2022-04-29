@@ -70,8 +70,9 @@ public class CakeController {
 	// In this case, we're passing Set<String> object (populated flavorList set)
 	// named "flavorList" to the 'select' tag's (flavor tag's) 'items' attribute
 	@ModelAttribute("flavorList")
-	public Set<String> populateFillingList() {
-		return CakeService.flavorList.keySet();
+	public Set<String> populateFillingList()
+	{
+		return CakeService.flavorList.keySet();//flavour list linked hashmap static hai CakeService class me isliye usko direct class name se access kr skte hai
 	}
 
 }
