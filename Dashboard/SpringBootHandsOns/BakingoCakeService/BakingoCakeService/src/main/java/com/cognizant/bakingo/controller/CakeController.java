@@ -69,10 +69,10 @@ public class CakeController {
 	// @ModelAttribute at method level, to pass a model object to the views.
 	// In this case, we're passing Set<String> object (populated flavorList set)
 	// named "flavorList" to the 'select' tag's (flavor tag's) 'items' attribute
-	@ModelAttribute("flavorList")
-	public Set<String> populateFillingList()
+	@ModelAttribute("flavorList")//ye method level pr model attribute hai islye saree jsp pages ke liye kam karega.kisi bhi jsp page me "flavourList" curly 
+	public Set<String> populateFillingList()                                  //braces ke andar ayega to uske jagah jo function return kr raha wo ajayeag
 	{
-		return CakeService.flavorList.keySet();//flavour list linked hashmap static hai CakeService class me isliye usko direct class name se access kr skte hai
+		return CakeService.flavorList.keySet();//flavour list jo  linked hashmap  hai wo static hai CakeService class me isliye usko direct class name se access kr skte hai
 	}
 
 }
