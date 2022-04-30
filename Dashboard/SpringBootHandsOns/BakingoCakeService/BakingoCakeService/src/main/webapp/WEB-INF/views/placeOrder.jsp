@@ -102,7 +102,7 @@ font-weight:normal;
                 
 		<%--all radio button must have same pathname --%>
                 <sf:radiobutton path="selectedcake" id="selectedcake1" value="10" />
-                <label class='radiolabel'>Round cake 6" - serves 8 people ($10)</label> <br/>
+                <label class='radiolabel'>Round cake 6" - serves 8 people ($10)</label> <br/><%--each radio button has id according to question --%>
                 
                 <sf:radiobutton path="selectedcake" id="selectedcake2" value="15" />
                 <label class='radiolabel'>Round cake 8" - serves 12 people ($15)</label> <br/>
@@ -114,6 +114,8 @@ font-weight:normal;
                 <label class='radiolabel'>Round cake 12" - serves 30 people($30)</label> <br/>
                 <sf:errors path="selectedcake" />
                 
+		       
+             <!-- id is provided to each element according to question -->
                 <br/>
                 <label>Filling Flavor</label>
          		<sf:select path="flavor" id="flavor" items="${flavorList}" />
