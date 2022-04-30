@@ -100,6 +100,7 @@ font-weight:normal;
                 
                 <label>Size Of the Cake</label> <br/>
                 
+		<%--all radio button must have same pathname --%>
                 <sf:radiobutton path="selectedcake" id="selectedcake1" value="10" />
                 <label class='radiolabel'>Round cake 6" - serves 8 people ($10)</label> <br/>
                 
