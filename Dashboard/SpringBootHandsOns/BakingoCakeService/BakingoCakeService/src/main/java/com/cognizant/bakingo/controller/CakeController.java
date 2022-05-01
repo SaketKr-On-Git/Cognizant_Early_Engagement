@@ -37,7 +37,10 @@ public class CakeController {
 
 		// Assigning the flavorRate value of the flavorList map to the cake object's
 		// flavorRate value
-		cake.setFlavorRate(CakeService.flavorList.get(cake.getFlavor()));
+		cake.setFlavorRate(CakeService.flavorList.get(cake.getFlavor()));//user jo dropdown list se flavor select karega uss flavor ke corresponding value 
+		                                               //fetch karenge flavor list se aur ussi value se flavor ka rate set karenge
+		
+		
 
 		if (cake.getIncludeCandles() == null)
 			cake.setIncludeCandles(0); // To prevent NullPointerException
