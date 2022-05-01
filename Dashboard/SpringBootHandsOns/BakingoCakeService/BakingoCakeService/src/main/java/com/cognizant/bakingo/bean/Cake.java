@@ -10,7 +10,7 @@ public class Cake {
 	private Integer selectedcake;
 	
 	private String flavor;
-	private Integer flavorRate;
+	private Integer flavorRate;//flavorRate form se directly nhi araha..form se sirf flavor a rha aur backend me ham uss flavor se flavorRate set karenge
 	private Integer includeCandles;
 	private Integer includeinscription;
 	private String theinscription;
