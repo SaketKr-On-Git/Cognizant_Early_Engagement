@@ -27,7 +27,7 @@ public class BMIController {
 		return "bmiCalculatorForm";
 	}
 
-	@RequestMapping(value = "/getBMI", method = RequestMethod.GET)
+	@RequestMapping(value = "/getBMI", method = RequestMethod.GET)// RequestMethod is GET according to question
 	public String getBMIStatus(@ModelAttribute("user") @Valid User user, BindingResult result, ModelMap map) {
 
 		// Redirecting to the same form page if invalid
