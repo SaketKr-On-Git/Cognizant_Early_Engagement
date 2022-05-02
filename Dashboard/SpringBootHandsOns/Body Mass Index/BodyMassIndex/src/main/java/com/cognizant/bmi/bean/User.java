@@ -6,7 +6,7 @@ import javax.validation.constraints.NotNull;
 
 public class User {
 
-	private int userId;
+	private int userId;//userId is not present in form but it is set afterwards in controller
 
 	@NotBlank(message = "Name is required")
 	private String name;
