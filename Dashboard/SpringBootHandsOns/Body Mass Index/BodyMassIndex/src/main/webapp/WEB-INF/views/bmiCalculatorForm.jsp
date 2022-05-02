@@ -11,7 +11,7 @@
 <body>
 	<br>
 	<br>
-	<h1 id="heading">BMI Calculator</h1>
+	<h1 id="heading">BMI Calculator</h1> <!-- id given according to question -->
 	<table>
 		<caption style="font-weight: bolder;">Body Mass Index
 			Calculator Form</caption>
