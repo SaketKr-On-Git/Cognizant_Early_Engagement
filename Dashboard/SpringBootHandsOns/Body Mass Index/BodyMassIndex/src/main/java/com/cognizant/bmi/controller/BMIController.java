@@ -36,6 +36,9 @@ public class BMIController {
 		}
 
 		User validUser = bmiService.addUserDetails(user); // Adding user to userList
+		//user object gets modified through bmiService . userId has been set which was not initialized 
+		//before this line
+		
 		Double bmi = bmiService.calculateBMI(validUser); // Calculating BMI
 		String BMIstatus = bmiService.getBMIStatus(bmi); // Getting BMI Status
 
