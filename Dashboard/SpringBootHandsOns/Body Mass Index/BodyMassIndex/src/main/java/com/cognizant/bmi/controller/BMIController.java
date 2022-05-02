@@ -29,7 +29,7 @@ public class BMIController {
 
 	@RequestMapping(value = "/getBMI", method = RequestMethod.GET)// RequestMethod is GET according to question
 	public String getBMIStatus(@ModelAttribute("user") @Valid User user, BindingResult result, ModelMap map) {
-
+                                  //valid is before @modelAttribute in original question also
 		// Redirecting to the same form page if invalid
 		if (result.hasErrors()) {
 			return "bmiCalculatorForm";
