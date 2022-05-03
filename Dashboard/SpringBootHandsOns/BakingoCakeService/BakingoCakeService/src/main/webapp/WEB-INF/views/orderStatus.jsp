@@ -12,7 +12,7 @@
 		Your order has been successfully placed, <br/>
 		Order Id is: ${orderId} <br/>
 		Order Date: ${orderDate} <br/>
-		Amount in dollar: $${cake.getPrice()} <br/><!-- here there is $$ -->
+		Amount in dollar: $${cake.getPrice()} <br/><!-- here there is $$ .The first dollar is for the money and second dollar is of jstl syntax-->
 		Amount in Rupees: Rs.${indianPrice} <br/>
 	</h2>
 </body>
