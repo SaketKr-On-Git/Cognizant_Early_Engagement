@@ -43,7 +43,7 @@ public class Driver {
 		s.close();
 
 		// Setting the 'tempAddress' and 'phoneNumber' user inputs to 'addressBook' object
-		addressBook.getTempAddress().setHouseName(houseName);
+		addressBook.getTempAddress().setHouseName(houseName);//addressBook object se TempAddress object get karenge fir uss object me values set karenge
 		addressBook.getTempAddress().setStreet(street);
 		addressBook.getTempAddress().setCity(city);
 		addressBook.getTempAddress().setState(state);
