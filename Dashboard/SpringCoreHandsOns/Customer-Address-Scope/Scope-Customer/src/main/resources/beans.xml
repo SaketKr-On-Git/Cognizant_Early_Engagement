@@ -7,4 +7,7 @@
 		<property name="address" ref="addrObj" />
 	</bean>
 
+	
+	<!-- Each time a new Customer  object is created using getBean() in Driver class a new Customer object is created and its one of its property that is address 
+is also newly created each time-->
 </beans>
