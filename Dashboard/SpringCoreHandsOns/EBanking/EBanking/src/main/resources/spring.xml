@@ -11,7 +11,8 @@
 	<bean id="bankAccount" class="com.cts.EBanking.BankAccount" abstract="true" />
 
 	<!-- SmartBankAccount bean -->
-	<bean id="smartBankAccount" class="com.cts.EBanking.SmartBankAccount" parent="bankAccount">
+	<bean id="smartBankAccount" class="com.cts.EBanking.SmartBankAccount" parent="bankAccount"><!--objects for class BankAccount cannot be directly created so the class
+                                                                         that extends it SmartBankAccount is creating the bean for it-->
 		<constructor-arg value="100" />
 		<constructor-arg value="Joe" />
 		<constructor-arg value="10000" />
