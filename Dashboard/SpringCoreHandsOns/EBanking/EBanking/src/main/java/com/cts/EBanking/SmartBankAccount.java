@@ -11,7 +11,7 @@ public class SmartBankAccount extends BankAccount {
 
 	// Parameterised constructor
 	public SmartBankAccount(int customerId, String name, double balance, List<String> accounts) {
-		super(customerId, name, balance, accounts);
+		super(customerId, name, balance, accounts);//with super first we initailize parent class constructor
 	}
 
 	public double calculateFixedAccount(double amount, int months) {
