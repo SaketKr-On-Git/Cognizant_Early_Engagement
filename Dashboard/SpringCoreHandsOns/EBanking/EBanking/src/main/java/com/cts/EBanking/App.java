@@ -37,7 +37,7 @@ public class App {
 		System.out.println("Please select the account type \n1 " + smartBankAccount.getAccounts().get(0) + " \n2 "
 				+ smartBankAccount.getAccounts().get(1) + " \n3 " + smartBankAccount.getAccounts().get(2));
 
-		switch (scanner.nextInt()) {
+		switch (scanner.nextInt()) {// choices will be in int so we do nextInt()
 
 		case 1:
 			System.out.println("Select transaction type \n 1.Deposit \n 2.Withdraw");
@@ -46,7 +46,7 @@ public class App {
 				// Do call deposit
 
 				System.out.println("Enter amount to be deposited");
-				double amount = scanner.nextDouble();
+				double amount = scanner.nextDouble();// amount will be in Double so we do nextDouble()
 				System.out
 						.println("Your balance amount is " + decimalFormat.format(smartBankAccount.doDeposit(amount)));
 
